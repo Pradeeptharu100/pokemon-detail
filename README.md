@@ -23,8 +23,6 @@ A Flutter application that integrates with the Pokémon API to fetch and display
 
 This project uses the following dependencies:
 
-- **[flutter](https://flutter.dev/)**: The SDK for building natively compiled applications for mobile, web, and desktop from a single codebase.
-- **[cupertino_icons](https://pub.dev/packages/cupertino_icons)**: Provides Cupertino-style icons, used primarily on iOS.
 - **[http](https://pub.dev/packages/http)**: A simple package to make HTTP requests and fetch data from APIs.
 - **[flutter_bloc](https://pub.dev/packages/flutter_bloc)**: State management solution based on the BLoC (Business Logic Component) pattern, which helps to handle the application's state.
 - **[flutter_screenutil](https://pub.dev/packages/flutter_screenutil)**: A package that helps to create responsive UIs across different screen sizes.
