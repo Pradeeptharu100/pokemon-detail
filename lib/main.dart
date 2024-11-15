@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:pokemon_app/bloc/pokemon_bloc.dart';
 import 'package:pokemon_app/models/respositories/pokemon_repository.dart';
 import 'package:pokemon_app/views/pokemon_view.dart';
@@ -13,13 +14,21 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Pokémon App',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const PokemonPage(),
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final deignSize = Size(constraints.maxWidth, constraints.maxHeight);
+        return ScreenUtilInit(
+          designSize: deignSize,
+          builder: (context, child) => MaterialApp(
+            debugShowCheckedModeBanner: false,
+            title: 'Pokémon App',
+            theme: ThemeData(
+              primarySwatch: Colors.blue,
+            ),
+            home: const PokemonPage(),
+          ),
+        );
+      },
     );
   }
 }

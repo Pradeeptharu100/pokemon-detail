@@ -168,20 +168,20 @@ class _PokemonViewState extends State<PokemonView> {
                 child: BlocBuilder<PokemonBloc, PokemonState>(
                   builder: (context, state) {
                     if (state is PokemonInitial) {
-                      return Center(
+                      return const Center(
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Icon(
                               Icons.catching_pokemon,
                               size: 64,
-                              color: Colors.grey[400],
+                              color: Colors.white,
                             ),
-                            const SizedBox(height: 16),
+                            SizedBox(height: 16),
                             Text(
                               'Enter a Pokémon name or ID to search',
                               style: TextStyle(
-                                color: Colors.grey[600],
+                                color: Colors.white,
                                 fontSize: 16,
                               ),
                             ),
