@@ -43,10 +43,6 @@ In your `pubspec.yaml`, dependencies should be listed as follows:
 
 ```yaml
 dependencies:
-  flutter:
-    sdk: flutter
-
-  cupertino_icons: ^1.0.8
   http: ^1.2.2
   flutter_bloc: ^8.1.6
   flutter_screenutil: ^5.9.3 
